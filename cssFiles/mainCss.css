@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .parent input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 5px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 27px;
+    box-shadow: 0px 0px 2px 0px rgb(99, 99, 99);
+  }
+  .parent {
+    position: relative;
+    width: fit-content;
+    padding: 20px;
+    background-color: #dddddd;
+    margin: 150px auto 0px;
+    box-shadow: 2px 2px 9px 1px #9b9b9b;
+    border-radius: 7px;
+  }
+  .tab {
+    position: absolute;
+    width: 291px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+    transition-timing-function: linear;
+    bottom: 20px;
+    left: 169px;
+    cursor: pointer;
+  }
+  .tab:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 2px 0px rgb(76, 76, 76);
+  }
+  .parent .letters {
+    display: grid;
+    grid-template-columns: repeat(8, 70px);
+    gap: 4px;
+  }
+  .parent .letters div {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+  }
+  .icons i {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-timing-function: linear;
+    border-radius: 2px;
+  }
+  .icons i:first-child {
+    margin-left: auto;
+    margin-right: 4px;
+    background-color: white;
+    cursor: pointer;
+  }
+  .icons i:last-child {
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .icons {
+    background-color: #dddddd;
+    grid-column-start: 3;
+    grid-column-end: -1;
+  }
+  .letter {
+    background-color: white;
+    cursor: pointer;
+    transition-timing-function: linear;
+    border-radius: 2px;
+    animation-timing-function: linear;
+  }
+  
+  .letter:hover {
+    background-color: #e5e5e5;
+    box-shadow: 0px 0px 2px 0px rgb(99, 99, 99);
+  }
+  .icons i:first-child:hover {
+    background-color: #e5e5e5;
+    box-shadow: 0px 0px 2px 0px rgb(99, 99, 99);
+  }
+  .icons i:last-child:hover {
+    background-color: #e5e5e5;
+    box-shadow: 0px 0px 2px 0px rgb(99, 99, 99);
+  }
+  .upper {
+    text-transform: uppercase;
+  }
+  .blue {
+    color: rgb(3, 147, 225);
+  }
+  
+  @keyframes dd {
+    100% {
+      background-color: rgb(3, 147, 225);
+    }
+  }
+  .anim {
+    animation-name: dd;
+    animation-duration: 0.14s;
+  }
+  
+  @keyframes rr {
+    100% {
+      background-color: red;
+    }
+  }
+  .animTwo {
+    animation-name: rr;
+    animation-duration: 0.14s;
+  }
+  .animThree {
+    animation-name: bb;
+    animation-duration: 0.14s;
+  }
+  @keyframes bb {
+    100% {
+      background-color: rgb(3, 147, 225);
+    }
+  }
+  
